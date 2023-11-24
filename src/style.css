@@ -160,16 +160,31 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: auto;
         margin: auto;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        width: 80%;
     }
 
     .d-none {
         display: none;
     }
 
+    ul{
+        margin-top: 0;
+        gap: 3rem;
+    }
+
     .d-block {
         display: block;
+    }
+
+    .d-md-flex{
+        display: flex;
     }
 
     header {
@@ -253,11 +268,27 @@ header {
         font-size: 28px;
     }
 
+    /* NAV */
+
+    ul{
+        margin-top: 0;
+        gap: 3rem;
+    }
+
+    li a{
+        font-size: 1rem;
+    }
+
+    li{
+        padding-bottom: 0 !important;
+    }
 
     /* FORMULARIO */
     .form_texto_div {
         width: 50%;
     }
+
+
 
     .form_texto {
         color: rgb(77, 75, 75);
@@ -295,6 +326,7 @@ header {
 .form_texto_div {
     margin: 10px;
 }
+
 .inscrever {
     color: rgb(77, 75, 75);
     text-transform: uppercase;
