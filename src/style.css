@@ -103,3 +103,97 @@ header {
 }
 
 @media(min-width:1000px) {}
+
+
+
+/*formulario*/
+
+form {
+    background-color: white;
+    padding: 80px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+  }
+
+  .pagina4{
+    display: flex;
+  }
+
+  .form_botao{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .inscrever {
+    color: rgb(77, 75, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 8px;
+  }
+  
+  form .input{
+    width: 130%;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+  }
+  
+  .form_input:focus {
+    border: 1px solid #639;
+    outline: none;
+  }
+  
+  .form_marketing {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .form_marketing > input {
+    margin-right: 0.625em;
+  }
+  
+  .form_marketing > label {
+    color: grey !important;
+  }
+  
+  .checkbox, input[type="checkbox"] {
+    accent-color: #639  !important;
+  }
+  
+  .form_sub, .form_res {
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #639;
+    border: 1px dashed #639;
+    cursor: pointer;
+  }
+  
+  .form_sub:hover {
+    color: #639;
+    background-color: white;
+    border: 1px solid #639;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .form_res:hover {
+    color: #639;
+    background-color: white;
+    border: 1px solid #639;
+    cursor: pointer;
+    transition: 0.5s;
+  }
