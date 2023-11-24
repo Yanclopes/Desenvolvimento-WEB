@@ -31,14 +31,39 @@ header {
     display: none;
 }
 
+header {
+    position: fixed;
+    width: 100vw;
+}
+
 @media(min-width:0) {
+    /*FONT SIZES*/
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+        max-width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+        max-width: 80%;
+        text-align: center;
+        margin: auto;
+    }
 
     /* NAV */
     nav .nav_bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
 
     .d-none {
@@ -67,7 +92,7 @@ header {
         border-radius: 0.3rem;
     }
 
-    ul{
+    ul {
         margin-top: 2rem;
     }
 
@@ -77,25 +102,82 @@ header {
         text-decoration: none;
     }
 
-    nav li{
-       text-align: center; 
-       padding-bottom: 1rem;
+    nav li {
+        text-align: center;
+        padding-bottom: 1rem;
     }
 
     /*Formulário*/
-    
-    .form_texto_form{
-      display: none;
+
+    .form_texto_form {
+        display: inline;
     }
-  }
+
+    form {
+        width: 70vw;
+        background-color: white;
+        padding: 50px 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid lightgrey;
+        box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+        margin: auto;
+    }
+
+    .form_texto {
+        color: rgb(77, 75, 75);
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 20px 30px ;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    section {
+        padding: 2rem 0rem;
+    }
+}
 
 @media(min-width:768px) {
+    /*FONT SIZES*/    
+    p {
+        font-size: calc(16px + 2 * ((100vw - 600px) / 400));
+    }
 
-    nav {
+    h1 {
+        font-size: calc(28px + 4 * ((100vw - 600px) / 400));
+    }
+
+    h2 {
+        font-size: calc(24px + 3 * ((100vw - 600px) / 400));
+    }
+
+     /* NAV */
+     nav .nav_bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 80%;
+        margin: auto;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    .brand img {
+        width: 2rem;
     }
 
     .d-md-none {
@@ -106,112 +188,170 @@ header {
         display: block;
     }
 
-     /*Formulário*/
+    /*Formulário*/
+
+    .form_formdiv{
+        width: 60%;
+        max-height: 700px;
+    }
+
+    .form_texto_form {
+        margin-top: 2rem;
+        align-items: center;
+        display: flex;
+        width: 100% !important;
+    }
+
+    form {
+        width: 100%;
+        background-color: white;
+        padding: 50px 20px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid lightgrey;
+        box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+    }
+
+    .form_texto {
+        color: rgb(77, 75, 75);
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 20px 30px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    .form_texto_div{
+        width: 50%;
+    }
     
-    .form_texto_form{
-      display: none;
+
+    section {
+        width: 80%;
+        margin: auto;
+        padding: 5rem 0rem;
     }
 
 }
 
-@media(min-width:1000px) {}
+@media(min-width:1000px) {
+
+    /*FONT SIZES*/
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    /* FORMULARIO */
+    .form_texto_div {
+        width: 50%;
+    }
+
+    .form_texto {
+        color: rgb(77, 75, 75);
+        letter-spacing: 2px;
+        font-weight: bold;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    .form_texto_form{
+        justify-content: space-around;
+    }
+
+    form{
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    .form_formdiv{
+        width: 40%;
+        max-height: 700px;
+    }
+    
+}
 
 
 
 /*formulario*/
 
 .form_titulo {
-  text-align: center;
-  font-size: 260%;
+    text-align: center;
 }
 
-.form_texto_form{
-  display: flex;
-  width: 80%;
-  padding: 20px;
+.form_texto_div {
+    margin: 10px;
 }
-
-.form_texto_div{
-  margin: 10px;
-}
-
-.form_texto{
-    color: rgb(77, 75, 75);
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 220%;
-    padding: 60px;
-    border-radius: 15px;
-    letter-spacing: 2px;
-    text-align: justify;  
-}
-
-form {
-    background-color: white;
-    padding: 50px 120px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid lightgrey;
-    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
-
-  }
-
-  .inscrever {
+.inscrever {
     color: rgb(77, 75, 75);
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
     font-weight: bold;
-    font-size: x-large;
     margin-bottom: 0.5em;
-  }
-  
-  form .input{
-    width: 160%;
-    margin-top: 10px; /**/
+}
+
+form .input {
+    width: 80%;
+    margin-top: 10px;
+    /**/
     margin-bottom: 10px;
-    height: 40px;
+    height: 10%;
     border-radius: 5px;
     border: 1px solid gray;
     padding: 10px;
     font-family: 'Inter', sans-serif;
     outline: none;
-  }
-  
-  form .input:focus {
+}
+
+form .input:focus {
     border: 1px solid #639;
     outline: none;
-  }
-  
-  .form_marketing {
+}
+
+.form_marketing {
     display: flex;
     margin-bottom: 10px;
     align-items: center;
-  }
-  
-  .form_marketing > input {
+}
+
+.form_marketing>input {
     margin-right: 5px;
     margin-bottom: 5px;
-  }
-  
-  .form_marketing > label {
-    color: grey ;
- 
-  }
+}
 
-  .form_botao{
+.form_marketing>label {
+    color: grey;
+
+}
+
+.form_botao {
     display: flex;
     justify-content: space-around;
-    width: 120%;
-  }
-  
-  .checkbox, input[type="checkbox"] {
-    accent-color: #639  !important;
-  }
-  
-  .form_sub, .form_res {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.checkbox,
+input[type="checkbox"] {
+    accent-color: #639 !important;
+}
+
+.form_sub,
+.form_res {
     width: 45%;
     padding: 10px;
     border-radius: 5px;
@@ -219,12 +359,13 @@ form {
     background-color: #639;
     border: 1px dashed #639;
     cursor: pointer;
-  }
-  
-  .form_sub:hover, .form_res:hover {
+}
+
+.form_sub:hover,
+.form_res:hover {
     color: #639;
     background-color: white;
     border: 1px solid #639;
     cursor: pointer;
     transition: 0.5s;
-  }
+}
