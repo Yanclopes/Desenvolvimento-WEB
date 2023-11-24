@@ -81,7 +81,13 @@ header {
        text-align: center; 
        padding-bottom: 1rem;
     }
-}
+
+    /*Formulário*/
+    
+    .form_texto_form{
+      display: none;
+    }
+  }
 
 @media(min-width:768px) {
 
@@ -100,6 +106,12 @@ header {
         display: block;
     }
 
+     /*Formulário*/
+    
+    .form_texto_form{
+      display: none;
+    }
+
 }
 
 @media(min-width:1000px) {}
@@ -108,26 +120,44 @@ header {
 
 /*formulario*/
 
+.form_titulo {
+  text-align: center;
+  font-size: 260%;
+}
+
+.form_texto_form{
+  display: flex;
+  width: 80%;
+  padding: 20px;
+}
+
+.form_texto_div{
+  margin: 10px;
+}
+
+.form_texto{
+    color: rgb(77, 75, 75);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 220%;
+    padding: 60px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    text-align: justify;  
+}
+
 form {
     background-color: white;
-    padding: 80px;
-    border-radius: 10px;
+    padding: 50px 120px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid lightgrey;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+
   }
 
-  .pagina4{
-    display: flex;
-  }
-
-  .form_botao{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
   .inscrever {
     color: rgb(77, 75, 75);
     text-transform: uppercase;
@@ -135,37 +165,46 @@ form {
     display: block;
     font-weight: bold;
     font-size: x-large;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
   }
   
   form .input{
-    width: 130%;
-    margin-bottom: 15px;
+    width: 160%;
+    margin-top: 10px; /**/
+    margin-bottom: 10px;
     height: 40px;
     border-radius: 5px;
     border: 1px solid gray;
-    padding: 12px;
+    padding: 10px;
     font-family: 'Inter', sans-serif;
     outline: none;
   }
   
-  .form_input:focus {
+  form .input:focus {
     border: 1px solid #639;
     outline: none;
   }
   
   .form_marketing {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center;
   }
   
   .form_marketing > input {
-    margin-right: 0.625em;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   
   .form_marketing > label {
-    color: grey !important;
+    color: grey ;
+ 
+  }
+
+  .form_botao{
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
   }
   
   .checkbox, input[type="checkbox"] {
@@ -173,8 +212,8 @@ form {
   }
   
   .form_sub, .form_res {
-    width: 40%;
-    padding: 15px;
+    width: 45%;
+    padding: 10px;
     border-radius: 5px;
     color: white;
     background-color: #639;
@@ -182,15 +221,7 @@ form {
     cursor: pointer;
   }
   
-  .form_sub:hover {
-    color: #639;
-    background-color: white;
-    border: 1px solid #639;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-
-  .form_res:hover {
+  .form_sub:hover, .form_res:hover {
     color: #639;
     background-color: white;
     border: 1px solid #639;
