@@ -1,21 +1,22 @@
-.color1 {
-    color: #000006;
+.bg-color-1 {
+    background-color: #2b2e3e;
 }
 
-.color2 {
-    color: #2b2e3e;
-}
-
-.color3 {
-    color: #8a8f8e;
-}
-
-.color4 {
-    color: #ebebe7;
-}
-
-.color5 {
+.text-color1 {
     color: #f9f9f9;
+}
+
+
+.text-color2 {
+    color: #2d3533;
+}
+
+.bg-color-2 {
+    background-color: #ebebe7;
+}
+
+.bg-color-3 {
+    background-color: #000006;
 }
 
 * {
@@ -48,6 +49,8 @@ header {
         max-width: 80%;
         text-align: center;
         margin: auto;
+        text-transform: uppercase;
+        margin-top: 8rem;
     }
 
     h2 {
@@ -63,7 +66,7 @@ header {
         align-items: center;
         justify-content: space-between;
         width: 80%;
-        margin: auto;
+        margin: 0;
     }
 
     .d-none {
@@ -79,7 +82,7 @@ header {
     }
 
     .brand img {
-        width: 5rem;
+        width: 2rem;
     }
 
     nav button {
@@ -107,6 +110,18 @@ header {
         padding-bottom: 1rem;
     }
 
+    /* TITULO */
+
+    .carrossel{
+        width: 15rem;
+        border: 0.5px solid white;
+    }
+
+    .carrossel-div{
+        text-align: center;
+        margin-top: 3rem;
+    }
+
     /*Formulário*/
 
     .form_texto_form {
@@ -127,7 +142,7 @@ header {
     }
 
     .form_texto {
-        color: rgb(77, 75, 75);
+
         letter-spacing: 2px;
         font-weight: bold;
         padding: 20px 30px ;
@@ -149,6 +164,8 @@ header {
 
     h1 {
         font-size: calc(28px + 4 * ((100vw - 600px) / 400));
+        margin-top: 0rem;
+        text-align: left;
     }
 
     h2 {
@@ -161,13 +178,15 @@ header {
         align-items: center;
         justify-content: space-between;
         width: auto;
-        margin: auto;
+
     }
 
     nav{
         display: flex;
         align-items: center;
         width: 80%;
+        margin: auto;
+        justify-content: space-between;
     }
 
     .d-none {
@@ -203,6 +222,16 @@ header {
         display: block;
     }
 
+    /* TITULO */
+
+    .carrossel{
+        width: 15rem;
+    }
+
+    .title-div-father{
+        align-items: center;
+    }
+
     /*Formulário*/
 
     .form_formdiv{
@@ -230,7 +259,6 @@ header {
     }
 
     .form_texto {
-        color: rgb(77, 75, 75);
         letter-spacing: 2px;
         font-weight: bold;
         padding: 20px 30px;
@@ -283,6 +311,23 @@ header {
         padding-bottom: 0 !important;
     }
 
+    /* TITULO */
+    .title-div-father{
+        width: 90%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .carrossel{
+        width: 100%;
+        border: 1px solid white;
+    }
+
+    .carrossel-div{
+        width: 30rem;
+    }
+
+
     /* FORMULARIO */
     .form_texto_div {
         width: 50%;
@@ -291,7 +336,6 @@ header {
 
 
     .form_texto {
-        color: rgb(77, 75, 75);
         letter-spacing: 2px;
         font-weight: bold;
         border-radius: 15px;
