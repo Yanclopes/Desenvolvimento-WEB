@@ -37,6 +37,9 @@ header {
     width: 100vw;
 }
 
+video{
+    width: 70vw;
+}
 
 @media(min-width:0) {
     /*FONT SIZES*/
