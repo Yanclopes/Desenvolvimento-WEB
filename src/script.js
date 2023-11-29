@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(carrossel, 2000);
 });
+
+let galeriaIndice = 1;
+
+    function mudarItem(n) {
+        showItem(galeriaIndice += n);
+    }
+
+    function showItem(n) {
+        let Items = document.querySelectorAll('.galeria-item');
+        if (n > Items.length) {
+            galeriaIndice = 1;
+        }
+        if (n < 1) {
+            galeriaIndice = Items.length;
+        }
+        for (let i = 0; i < Items.length; i++) {
+            Items[i].classList.remove('ativo');
+        }
+        Items[galeriaIndice - 1].classList.add('ativo');
+    }
