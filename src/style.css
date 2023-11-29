@@ -207,6 +207,17 @@ video{
         margin: 2rem auto;
         width: 5rem;
     }
+
+    /*sobre nós*/
+    .sobrenos_div{
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 20px 30px;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
 }
 
 @media(min-width:768px) {
