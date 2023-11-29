@@ -40,12 +40,24 @@ header {
 video{
     width: 70vw;
 }
+.w-75{
+    width: 75%;
+    margin: auto;
+}
+.py{
+    margin: 2rem auto;
+}
+
+.text-center{
+    text-align: center;
+}
 
 @media(min-width:0) {
     /*FONT SIZES*/
 
     p {
         font-size: 16px;
+        font-family: 'Mulish';
     }
 
     h1 {
@@ -55,6 +67,7 @@ video{
         margin: auto;
         text-transform: uppercase;
         margin-top: 8rem;
+        font-family: 'Montserrat';
     }
 
     h2 {
@@ -62,6 +75,7 @@ video{
         max-width: 80%;
         text-align: center;
         margin: auto;
+        font-family: 'Montserrat';
     }
 
     /* NAV */
@@ -70,7 +84,8 @@ video{
         align-items: center;
         justify-content: space-between;
         width: 80%;
-        margin: 0;
+        margin: auto;
+        padding: 2rem;
     }
 
     .d-none {
@@ -82,7 +97,7 @@ video{
     }
 
     header {
-        padding: 2rem;
+        width: 100%;
     }
 
     .brand img {
@@ -100,13 +115,15 @@ video{
     }
 
     ul {
-        margin-top: 2rem;
+        width: 80%;
+        margin: 2rem auto;
     }
 
     li a {
         font-size: 1.5rem;
         color: #8a8f8e;
         text-decoration: none;
+        font-family: 'DM Sans';
     }
 
     nav li {
@@ -184,6 +201,12 @@ video{
     section {
         padding: 2rem 0rem;
     }
+
+    /* footer */
+    footer img{
+        margin: 2rem auto;
+        width: 5rem;
+    }
 }
 
 @media(min-width:768px) {
@@ -211,6 +234,10 @@ video{
         width: auto;
 
     }
+    ul {
+        width: 80%;
+        margin: 0rem auto;
+    }
 
     nav {
         display: flex;
@@ -225,9 +252,14 @@ video{
     }
 
     ul {
-        margin-top: 0;
         gap: 3rem;
     }
+
+    ul li a{
+        font-size: 1rem;
+    }
+    
+    
 
     .d-block {
         display: block;
@@ -309,6 +341,15 @@ video{
         padding: 5rem 0rem;
     }
 
+    /* footer */
+
+    .footer{
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer{
+        padding: 2rem 0rem;
+    }
 }
 
 @media(min-width:1000px) {
