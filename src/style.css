@@ -253,21 +253,24 @@ video{
     }
 
     .tables {
-        padding: 20px 30px;
-        text-align: justify;
-        margin: auto;
-        display: flex;
+        width: 100%;
     }
 
-    .tables tr{
-        display: flex;
+    .tables th{
+        height: 100px;
+        padding: 5px 15px;
+        text-align: left;
     }
-    .tables tr th{
-        display: flex;
-    }
-    .tables tr td{
-        display: flex;
-    }
+    
+    .tables td{
+        height: 20px;
+        vertical-align: top;
+        padding: 5px 15px;
+        text-align:justify;
+    } 
+    
+    
+
     /*sobre nós*/
     .sobrenos_div{
         letter-spacing: 2px;
