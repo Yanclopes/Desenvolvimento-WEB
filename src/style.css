@@ -254,12 +254,15 @@ video{
 
     .tables {
         width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
     }
 
     .tables th{
         height: 100px;
-        padding: 5px 15px;
+        padding: 1px 15px;
         text-align: left;
+        border: 1px solid black;
     }
     
     .tables td{
@@ -267,6 +270,7 @@ video{
         vertical-align: top;
         padding: 5px 15px;
         text-align:justify;
+        border: 1px solid black;
     } 
     
     
@@ -423,6 +427,10 @@ video{
     }
     footer{
         padding: 2rem 0rem;
+    }
+
+    footer dl{
+        padding: 0.5rem;
     }
 }
 
