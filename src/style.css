@@ -78,6 +78,11 @@ video{
         font-family: 'Montserrat';
     }
 
+    tr, td {
+        font-size: 18px;
+        font-family: 'Mulish';
+    }
+
     /* NAV */
     nav .nav_bar {
         display: flex;
