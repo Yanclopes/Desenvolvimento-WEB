@@ -82,7 +82,11 @@ video{
         font-size: 18px;
         font-family: 'Mulish';
     }
-
+    
+    dl{
+        font-size: 16px;
+        font-family: 'Mulish';
+    }
     /* NAV */
     nav .nav_bar {
         display: flex;
@@ -207,12 +211,63 @@ video{
         padding: 2rem 0rem;
     }
 
+    /*Sobre deepfake*/
+    .div_info {
+        display: flex;
+    }
+
+    .div_info_texto { 
+        padding: 20px 30px;
+        text-align: justify;
+        color: #2d3533;
+        
+    }
+    .div_info_texto p {
+        margin-bottom: 8px;
+    }
     /* footer */
     footer img{
         margin: 2rem auto;
         width: 5rem;
     }
 
+    /*problemas deepfake*/
+    .div_prob {
+        display: inline;
+    }
+
+    .div_prob_texto { 
+        padding: 20px 30px;
+        text-align: justify;
+        color: #2d3533;
+        display: flex;
+       
+        
+    }
+    .div_prob_texto p {
+        margin-bottom: 8px;
+    }
+
+    .div_tables {
+        display: flex;
+    }
+
+    .tables {
+        padding: 20px 30px;
+        text-align: justify;
+        margin: auto;
+        display: flex;
+    }
+
+    .tables tr{
+        display: flex;
+    }
+    .tables tr th{
+        display: flex;
+    }
+    .tables tr td{
+        display: flex;
+    }
     /*sobre nós*/
     .sobrenos_div{
         letter-spacing: 2px;
